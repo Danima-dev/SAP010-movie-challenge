@@ -1,0 +1,16 @@
+body {
+  background-size: cover;
+
+}
+.caixa-cabeçalho{
+  width: 98%;
+  height: 100px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border: 1px solid white;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
