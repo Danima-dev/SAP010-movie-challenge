@@ -3,8 +3,8 @@ import React from 'react';
 const ListaFilmes = (props) => {
     return (
         <>
-            {props.movies.map((movie, index) => (
-                <div className='d-flex justify-content-start m-3'>
+            {props.movies.map((movie) => (
+                <div className='romance'>
                     <img src={movie.Poster} alt="movie"></img>
                 </div>
             ))}
