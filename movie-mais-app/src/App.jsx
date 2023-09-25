@@ -78,23 +78,24 @@ function App() {
   },
   
 ]);
-const [comedy] = useState([
-  {
-    "Title": "Notting Hill: 21st Century Carnival",
-    "Year": "2013",
-    "imdbID": "tt4523706",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BY2Q4YTBjOTktODZmOC00YmRmLTg4ZTItYTFmNDMwZTMwY2MzXkEyXkFqcGdeQXVyMjMwNDE3MTM@._V1_SX300.jpg"
-}
-]);
-  const solicitarFilme = async() => {
-    const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=79bf9410';
+  const [comedy, setComedy] = useState([
+    {
+      "Title": "Notting Hill: 21st Century Carnival",
+      "Year": "2013",
+      "imdbID": "tt4523706",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BY2Q4YTBjOTktODZmOC00YmRmLTg4ZTItYTFmNDMwZTMwY2MzXkEyXkFqcGdeQXVyMjMwNDE3MTM@._V1_SX300.jpg"
+  },
+  ]);
 
-    const response = await fetch(url);
-    const responseJson = response.json();
+  // const solicitarFilme = async() => {
+  //   const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=79bf9410';
 
-    console.log(responseJson)
-  }
+  //   const response = await fetch(url);
+  //   const responseJson = response.json();
+
+  //   console.log(responseJson)
+  // }
 
   return  (
     <>
@@ -105,13 +106,18 @@ const [comedy] = useState([
         
         <div className='caixa-cabeçalho'></div>
         
-
+        
        <div className='lista-de-filmes'>
           <div className='poster'>
-          <ListaFilmes movies = {movies}/>
+            <div>
+              <ListaFilmes movies = {movies} categoria="romance"/> 
+              <ListaFilmes movies = {moviesComedy} categoria="comedia"/> 
+            </div>
+
           <p>Ano{movies.year}</p>
           </div>
         
+
        </div>
       
         

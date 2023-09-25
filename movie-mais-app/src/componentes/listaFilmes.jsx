@@ -13,7 +13,7 @@ const ListaFilmes = (props) => {
                 <div className='comedy'>
                     <img src={comedys.Poster} alt="movie" />
                 </div>
-            ))}
+            ))} 
 
         </>
     );
