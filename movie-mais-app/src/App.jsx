@@ -78,7 +78,7 @@ function App() {
   },
   
 ]);
-  const [comedy, setComedy] = useState([
+  const [moviesComedy, setComedy] = useState([
     {
       "Title": "Notting Hill: 21st Century Carnival",
       "Year": "2013",
@@ -88,14 +88,14 @@ function App() {
   },
   ]);
 
-  // const solicitarFilme = async() => {
-  //   const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=79bf9410';
+  const solicitarFilme = async() => {
+    const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=79bf9410';
 
-  //   const response = await fetch(url);
-  //   const responseJson = response.json();
+    const response = await fetch(url);
+    const responseJson = response.json();
 
-  //   console.log(responseJson)
-  // }
+    console.log(responseJson)
+  }
 
   return  (
     <>
@@ -110,8 +110,8 @@ function App() {
        <div className='lista-de-filmes'>
           <div className='poster'>
             <div>
-              <ListaFilmes movies = {movies} categoria="romance"/> 
-              <ListaFilmes movies = {moviesComedy} categoria="comedia"/> 
+              <ListaFilmes movies = {movies} /> 
+              <ListaFilmes movies = {moviesComedy} /> 
             </div>
 
           <p>Ano{movies.year}</p>
