@@ -79,7 +79,13 @@ function App() {
   
 ]);
 const [comedy] = useState([
-
+  {
+    "Title": "Notting Hill: 21st Century Carnival",
+    "Year": "2013",
+    "imdbID": "tt4523706",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BY2Q4YTBjOTktODZmOC00YmRmLTg4ZTItYTFmNDMwZTMwY2MzXkEyXkFqcGdeQXVyMjMwNDE3MTM@._V1_SX300.jpg"
+}
 ]);
   const solicitarFilme = async() => {
     const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=79bf9410';
@@ -89,10 +95,6 @@ const [comedy] = useState([
 
     console.log(responseJson)
   }
-
-    // useEffect(() =>{
-    //   solicitarFilme();
-    // }, []);
 
   return  (
     <>

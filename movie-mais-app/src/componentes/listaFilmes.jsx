@@ -9,6 +9,12 @@ const ListaFilmes = (props) => {
                 </div>
             ))}
 
+            {props.comedy.map((comedys) => (
+                <div className='comedy'>
+                    <img src={comedys.Poster} alt="movie" />
+                </div>
+            ))}
+
         </>
     );
 };
