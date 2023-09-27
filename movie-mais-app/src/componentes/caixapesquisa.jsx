@@ -1,9 +1,12 @@
 import React from 'react';
 
-const CaixaPesquisa = () => {
+const CaixaPesquisa = (props) => {
     return (
         <div className='input'>
-            <input placeholder='pesquisa seu filme'></input>
+            <input className='input-texto'
+            value={props.value}
+            onChange={(event)=> props.setSearchValue(event.target.value)}
+             placeholder='pesquisa seu filme'></input>
         </div>
     )
 }

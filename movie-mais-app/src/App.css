@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-   
+  background-image: radial-gradient(circle at 56.16% -20.44%, #829AA4 0, #A9A798 50%, #C88B58 100%);
    background-color: #1b1b1b;
    
 
@@ -9,31 +9,57 @@ body {
 .caixa-cabeçalho{
   width: 98%;
   height: 100px;
+  margin-top: 10px;
   margin-left: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border: 1px solid white;
 }
 
 .lista-de-filmes{
   margin-left: 10px;
+  
 }
 
-.poster  {
+.caixa-imagem {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 
-img{
-  height: 300px;
+.romance:hover {
+  transform: scale(1.08);
+} 
+.linha-poster{
+  max-height: 250px ;
+}
+
+.linha-poster:hover{
+  transform: scale(1.09);
+}
+
+.linha-poster{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  border: solid 3px #ece4e4;
+  margin: 20px;
 }
 
 input  {
   margin-left: 85%;
   height: 25px; 
+  border-radius: 15px;
+  opacity: 0.6;
+  border: none;
 }
 
 .h1 {
   width: 50%;
   height: 12px;
   color: white;
+  margin-left: 15px;
 }
 
