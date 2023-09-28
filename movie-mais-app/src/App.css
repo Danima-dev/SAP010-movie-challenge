@@ -63,3 +63,38 @@ input  {
   margin-left: 15px;
 }
 
+@media (max-width: 767px) {
+  .caixa-cabeçalho{
+    width: 94%;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+  }
+
+  input  {
+    margin-left: 48%;
+    height: 25px; 
+    border-radius: 15px;
+    opacity: 0.6;
+    border: none;
+  }
+
+  .linha-poster{
+    max-height: 250px ;
+  }
+  
+  .linha-poster:hover{
+    transform: scale(1.09);
+  }
+  
+  .linha-poster{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    border: solid 3px #ece4e4;
+    margin: 20px;
+    margin-left: 68px;
+  }
+}
